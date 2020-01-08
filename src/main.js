@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 
 import './utlis/register-vant'
+import './styles/base.less'
 
 import 'amfe-flexible'
 new Vue({

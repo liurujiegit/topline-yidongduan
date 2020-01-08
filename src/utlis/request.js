@@ -39,7 +39,8 @@ request.interceptors.response.use(
 request.defaults.transformResponse = [function (data) {
   try {
     return jsonBig.parse(data)
-  } catch {
+  } catch (err) {
+    console.log('转换失败，err')
     return {}
   }
 }]
